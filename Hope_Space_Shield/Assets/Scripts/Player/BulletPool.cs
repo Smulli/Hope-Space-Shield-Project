@@ -33,6 +33,7 @@ namespace Player.Utils{
             float _posZ = _initPos.transform.position.z;  
 
             _bullet.transform.position = new Vector3(_posX, _posY, _posZ);
+            _bullet.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             _bullet.gameObject.SetActive(true);
 
             if(_available.Count < 1){
@@ -44,6 +45,7 @@ namespace Player.Utils{
             _bullet.gameObject.SetActive(false);
             _bullet.transform.position = Vector3.zero;
             _bullet.transform.rotation = Quaternion.identity;
+            _bullet.transform.localScale = Vector3.one;
             _instantiate.Remove(_bullet);
             _available.Enqueue(_bullet);
         }

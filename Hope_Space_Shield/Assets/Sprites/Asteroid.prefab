@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6189241855324842205}
   - component: {fileID: 2549365306197065398}
-  - component: {fileID: 4500534767470982267}
+  - component: {fileID: 6810470199680451547}
+  - component: {fileID: -2108722987495666411}
   - component: {fileID: 6430622345677737846}
   - component: {fileID: -7815484560888549726}
   m_Layer: 0
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4489894170490853511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.405708, y: -140.11627, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4500534767470982267
+--- !u!114 &6810470199680451547
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,15 +95,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 4489894170490853511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8391fe107ee27ae49a64ba7b67bfee14, type: 3}
+  m_Script: {fileID: 11500000, guid: f3e9085816052cb40bbdada66770f703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targets:
-  - {fileID: 8578923797561941146, guid: 87eed1c18efa83d44a4d9cb20399ffde, type: 3}
-  - {fileID: 8578923797561941146, guid: 87eed1c18efa83d44a4d9cb20399ffde, type: 3}
-  - {fileID: 8578923797561941146, guid: 87eed1c18efa83d44a4d9cb20399ffde, type: 3}
-  - {fileID: 8578923797561941146, guid: 87eed1c18efa83d44a4d9cb20399ffde, type: 3}
-  _position: {fileID: 0}
+  _name: 
+  _hit: 0
+--- !u!114 &-2108722987495666411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489894170490853511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5675e17c00662d5448c7dbcf71f393a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _asteroids: {fileID: 6810470199680451547}
 --- !u!50 &6430622345677737846
 Rigidbody2D:
   serializedVersion: 4
